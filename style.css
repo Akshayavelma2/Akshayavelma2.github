@@ -1,0 +1,195 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section {
+    background-color: #91e2e2; /* A shade of purple */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.hero-section a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-section a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: #8e7cb3; /* A slightly darker shade of purple */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.profile-picture-container {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #e0d0f5; /* Light purple border */
+}
+
+.education ul, .experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education ul li, .experience ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.education ul li:before, .experience ul li:before {
+    content: '•';
+    color: #120f1a;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.education ul li strong {
+    color: #555;
+}
+
+.project-item h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #e0d0f5; /* Light purple background */
+    color: #0d0814; /* Darker purple text */
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.resume-download a {
+    display: inline-block;
+    background-color: #8c8599;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.resume-download a:hover {
+    background-color: #a79cbe;
+}
+
+.contact-info a {
+    color: #e2a6d5;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #d487df;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 0.9em;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skill-tag {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .resume-download a {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
